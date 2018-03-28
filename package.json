@@ -1,6 +1,6 @@
 {
   "name": "aarray",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Sortable associative array",
   "main": "aarray.js",
   "scripts": {
