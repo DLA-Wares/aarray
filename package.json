@@ -1,20 +1,44 @@
 {
-  "name": "aarray",
-  "version": "2.1.1",
+  "author": {
+    "name": "DLA-Wares"
+  },
+  "bugs": {
+    "url": "https://github.com/DLA-Wares/aarray/issues"
+  },
+  "dependencies": {},
   "description": "Sortable associative array",
-  "main": "aarray.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "22ad450f2ddb073c9a7562aca6dc1f6509b1bbe0",
+    "tarball": "https://registry.npmjs.org/aarray/-/aarray-2.1.1.tgz"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/DLA-Wares/aarray/"
-  },
+  "homepage": "https://github.com/DLA-Wares/aarray#readme",
   "keywords": [
     "Associative",
     "array",
     "nodejs"
   ],
-  "author": "DLA-Wares",
-  "license": "MIT"
+  "license": "MIT",
+  "main": "aarray.js",
+  "maintainers": [
+    {
+      "name": "ch4p43v",
+      "email": "ch4p43v@gmail.com"
+    },
+    {
+      "name": "comlog.gmbh",
+      "email": "comlog.gmbh@gmail.com"
+    }
+  ],
+  "name": "aarray",
+  "optionalDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DLA-Wares/aarray.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "3.0.2"
 }

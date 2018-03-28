@@ -1,5 +1,6 @@
 # Sortable associative array
 
+Support old and new NodeJS versions (Support for Node JS < 6 added).
 
 ```javascript
 var mydata = new AArray({'c':'3', 'b':'2', 'a':'1'});
@@ -46,6 +47,8 @@ for (var i in mydata) {
 * reverse()
 * Array keys()
 * Array values()
+* set(key, value)
+* mixed get(key)
 
 ```javascript
 var AArray = require("aarray");
