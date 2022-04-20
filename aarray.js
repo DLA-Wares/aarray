@@ -1,1 +1,0 @@
-module.exports = typeof Proxy == 'undefined' ? require('./aarray-v5.js') : require('./aarray-v6.js');

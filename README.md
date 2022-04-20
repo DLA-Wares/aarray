@@ -1,7 +1,37 @@
 # Sortable associative array
 
-Support old and new NodeJS versions (Support for Node JS < 6 added).
+## Changelog
+#### 2022-04-20
++ Added function slice
++ Support for nodejs < 6 disabled
++ Typescript
++ object like loop (for (var i in ....))
 
+---
+
+## Dokumentation
+### Properties
+* length (element count)
+* size (alias for length and Map compatibility)
+
+### Functions
+* constructor(Object|Array|AArray|Map)
+* extend (Object|Array|AArray|Map)
+* remove(mixed key)
+* Number nextKey() get next available key
+* mixed push(mixed value[, mixed key]) key is optional, result is key
+* forEach(Function eachFunction(mixed value, mixed, key, AArray context))
+* Object shiftObject() Result ist {key:mixed, value:mixed}
+* sort([Function f])
+* ksort([Function f])
+* reverse()
+* slice()
+* Array keys()
+* Array values()
+* set(key, value)
+* mixed get(key)
+
+## Examples
 ```javascript
 var mydata = new AArray({'c':'3', 'b':'2', 'a':'1'});
 for (var i in mydata) {
@@ -31,24 +61,6 @@ for (var i in mydata) {
 // c:3
 
 ```
-# Properties
-* length (element count)
-
-# Functions
-* exend(Object)
-* remove(mixed key)
-* Number nextKey() get next aviable key
-* mixed push(mixed value[, mixed key]) key is optional, result is key
-* forEach(Function eachFunction(mixed value, mixed, key, aarry context))
-* Object shiftObject() Result ist {key:mixed, value:mixed}
-* Number length()
-* sort([Function f])
-* ksort([Function f])
-* reverse()
-* Array keys()
-* Array values()
-* set(key, value)
-* mixed get(key)
 
 ```javascript
 var AArray = require("aarray");
@@ -66,4 +78,9 @@ mydata.forEach(function(val, key, context) {
     // remove item? No problem
     mydata.remove(key) // or delete mydata[key];
 });
+
+// loop method 2
+for(var key in mydata) {
+	console.info(i, mydata[i]);
+}
 ```
