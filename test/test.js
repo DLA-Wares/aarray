@@ -3,14 +3,10 @@ var aarray = require("../");
 var testArray = new aarray({test2:'xyz', test1: 'abc'});
 
 testArray['abc'] = '123';
-testArray['abc'] = '987';
-console.info(testArray.toString());
+testArray['xyz'] = new aarray({test2:'nnn', test1: 'nnn'});
+//console.info(testArray.toString());
 //delete testArray['abc'];
-testArray.sort();
-
-var test2Array = testArray.slice(0, 1);
-
-console.info(testArray.size);
+//testArray.sort();
 
 for(var i in testArray) {
 	console.info(i, testArray[i]);

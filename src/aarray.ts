@@ -276,6 +276,7 @@ class AArray {
 	toString() : string {
 		var res: any[] = [];
 		this.forEach(function (val, key) {
+			if (val && typeof val == 'object') val = val+'';
 			res.push({key: key, value: val});
 		});
 		return JSON.stringify(res);

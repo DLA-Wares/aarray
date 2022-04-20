@@ -261,6 +261,8 @@ var AArray = /** @class */ (function () {
     AArray.prototype.toString = function () {
         var res = [];
         this.forEach(function (val, key) {
+            if (val && typeof val == 'object')
+                val = val + '';
             res.push({ key: key, value: val });
         });
         return JSON.stringify(res);
