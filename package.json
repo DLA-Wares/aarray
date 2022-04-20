@@ -46,5 +46,5 @@
 		"test-lint": "eslint src --ext .js,.ts",
 		"prepublishOnly": "npm run build"
 	},
-	"version": "4.0.0"
+	"version": "4.0.1"
 }
